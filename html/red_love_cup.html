@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../img/favicon.jpg" sizes="16x16">
+    <link rel="stylesheet" href="../build/output.css">
+    <script src="./main.js" type="text/javascript" async></script>
+    <title>SpecialCoffee</title>
+</head>
+
+<body>
+    <div id="root">
+        <div class="content_wraper font-Karla max-w-screen-2xl text-base mx-auto px-8 ">
+            <header class="p-6 mx-auto">
+                <nav class="flex flex-row justify-between items-center relative">
+                    <div class="logo basis-2/6 text-center text-xl font-semibold cursor-pointer">
+                        <a href="index.html">SpecialCoffee.</a>
+                    </div>
+                    <ul id="top-menu-item"
+                        class="basis-3/6 hidden  lg:flex lg:items-center lg:justify-end lg:gap-8 uppercase text-sm text-gray-500 font-medium">
+                        <li class="ct-top-menu-item">
+                            <a href="index.html" class="">Home</a>
+                        </li>
+
+                        <li class="ct-top-menu-item">
+                            <a href="#" class="">Products</a>
+                        </li>
+
+                        <li class="ct-top-menu-item">
+                            <a href="#" class="">Blog</a>
+                        </li>
+
+
+                        <li class="ct-top-menu-item">
+                            <a href="#" class="">About</a>
+                        </li>
+
+
+                        <li class="ct-top-menu-item">
+                            <a href="#" class="">Contact</a>
+                        </li>
+
+                        <li class="ct-top-menu-item">
+                            <a href="#" class="">StyleGuide</a>
+                        </li>
+
+                        <li class="ct-top-menu-item ct-top-menu-item-active">
+                            <a href="#" class="">Team</a>
+                        </li>
+                    </ul>
+
+                    <!-- start cart -->
+                    <ul
+                        class="basis-3/6 lg:basis-1/6 flex justify-end lg:justify-start items-center ml-16 uppercase text-sm text-gray-500 font-medium">
+                        <li class="ct-top-menu-item ">
+                            <a href="#" class="flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="set-icon">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+                                </svg>
+                                <span class="mx-2">
+                                    Cart
+                                </span>
+                                <span class="tqd-badge-circle bg-orange-400 text-white">99+</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- end cart -->
+
+                    <div class=" basis-1/6 lg:hidden flex items-center cursor-pointer sm:px-4 px-2">
+                        <svg id="toggle-top-menu-icon" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="set-icon">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        </svg>
+
+                    </div>
+                </nav>
+            </header>
+
+            <main>
+                <!-- picture product and price -->
+                <div class="featured-mugs w-[95%] xl:w-[65%] mx-auto mt-20">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-4">
+                        <div class="tqd-product-card">
+                            <div
+                                class=" h-[400px] sm:h-[530px] bg-[url('../img/product-coffee-01.jpeg')] bg-cover bg-no-repeat bg-center">
+                                <a href="#" alt="phamduc">
+                                    <div class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all 
+                                        hover:ease-in-out hover:duration-600 relative group">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="tqd-product-card ">
+                            <div class="h-[400px] sm:h-[530px] flex flex-row justify-center items-center">
+                                <div class="ml-11">
+                                    <div class="text-3xl mb-5 uppercase text-[#A25F4B]">
+                                        Red love cup
+                                    </div>
+                                    <div class="text-gray-500 leading-7 mb-4">
+                                        Amet suscipit omnis eum necessitatibus quos doloribus. Ut placeat et corrupti.
+                                        Reprehenderit quisquam omnis omnis velit commodi. Animi quaerat sed repellendus.
+                                    </div>
+                                    <div class="text-3xl text-[#A25F4B]">
+                                        $25.00
+                                    </div>
+
+                                    <div class="text-gray-500 leading-7 mb-4 uppercase">
+                                        Quantity
+                                    </div>
+
+                                    <div class="flex justify-between items-center">
+                                        <input type="number" name="phamduc" min="1" max="100"
+                                            class="border-[1px] border-gray-700 w-[176px] h-[56px] bg-gray-100 text-center ml-[2px] ">
+                                        <div class="mr-7">
+                                            <div class="tqd-button bg-gray-900  text-white w-max mx-auto md:mx-0  ">
+                                                ADDS TO CART
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- end picture product and price -->
+
+                <!-- start detail product -->
+                <div class="featured-mugs w-[95%] xl:w-[65%] mx-auto mb-24 mt-20">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-4 h-[350px]">
+                        <div class="tqd-product-card  sm:h-[430px] text-center sm:text-left">
+                            <div class="text-gray-500 leading-7 mb-4">
+                                DETAILS
+                            </div>
+                            <div class="text-gray-500 leading-7 ">
+                                Id cupiditate cum sequi eum neque dolorem dicta quisquam non. Quas vel perferendis
+                                accusantium eum cum voluptates libero doloribus voluptates. A et quia qui quia. Sunt
+                                tempore est sit facilis. Amet suscipit omnis eum necessitatibus quos doloribus. Ut
+                                placeat et corrupti. Reprehenderit quisquam omnis omnis velit commodi. Animi quaerat sed
+                                repellendus. Perspiciatis rerum commodi dolore consequatur voluptates accusantium velit.
+                                Aut dicta iusto neque ea voluptates. Ducimus est ut neque sunt eum iusto. Consequatur
+                                quia occaecati enim omnis repudiandae labore.
+                            </div>
+                        </div>
+
+                        <div class="tqd-product-card text-center sm:text-left h-[450px]">
+                            <div class="ml-11">
+                                <div class=" text-gray-500 leading-7 mb-4">
+                                    DIMENSIONS
+                                </div>
+                                <li class="text-gray-500 leading-7 mb-1 ">
+                                    Height (in) 30.0
+                                </li>
+                                <li class="text-gray-500 leading-7 mb-1 ">
+                                    Width (in):12.0
+                                </li>
+                                <li class="text-gray-500 leading-7 mb-1 ">
+                                    Weight (oz):12.0
+                                </li>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- end detail product -->
+
+                <!-- start paralax -->
+                <div
+                    class="tqd-parallax-section bg-[url('../img/red_love_cup-background.jpg')] bg-cover bg-no-repeat bg-center h-[400px] mb-24 bg-fixed w-[100vw] relative left-[calc(-50vw_+_50%)]">
+                </div> <!-- end paralax -->
+
+
+                <!-- start more products -->
+                <div class="tqd-subheadline">
+                    <div class="tqd-subheadline-deco-line"></div>
+                    <div class="tqd-subheadline-label ">
+                        YOU MIGHT ALSO LIKE THES
+                    </div>
+                    <div class="tqd-subheadline-deco-line"></div>
+                </div>
+
+                <div class="more-products w-[95%] xl:w-[65%] mx-auto mb-24">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-4">
+
+                        <!-- product 1 -->
+                        <div class="tqd-product-card">
+                            <div
+                                class="h-[380px]  bg-[url('../img/featured-mug-01.jpg')] bg-cover bg-no-repeat bg-center">
+                                <a href="#" alt="phamduc">
+                                    <div class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all 
+                                hover:ease-in-out hover:duration-600 relative group">
+                                        <div
+                                            class="absolute w-[100px] bg-white py-2 px-4 top-3 right-3 text-center font-semibold text-[#A25F4B]">
+                                            On Sale
+                                        </div>
+                                        <div
+                                            class="absolute  bg-white text-gray-900 w-11/12 bottom-4 left-1/2 -translate-x-1/2  uppercase tracking-wider py-4 
+                                px-8 text-[13px] font-semibold cursor-pointer hover:bg-opacity-90 hidden group-hover:block group-hover:animate-fadeIn text-center ">
+                                            Explore Mug
+                                        </div>
+
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="text-center mt-8">
+                                <a href="#" alt="product-pvduc" class="text-xl mb-3 hover:text-[#A25F4B]">
+                                    B&W Essentials Mug
+                                </a>
+                                <div class="product_price">
+                                    <span class="text-xl text-[#A25F4B]">$20.00</span>
+                                    <span class="ml-2 text-gray-400 line-through">$25.00 USD</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- product 2 -->
+                        <div class="tqd-product-card">
+                            <div
+                                class="h-[380px]  bg-[url('../img/product-coffee-02.jpeg')] bg-cover bg-no-repeat bg-center">
+                                <a href="#" alt="phamduc">
+                                    <div class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all 
+                                hover:ease-in-out hover:duration-600 relative group">
+                                        <div
+                                            class="absolute w-[100px] bg-white py-2 px-4 top-3 right-3 text-center font-semibold text-[#A25F4B]">
+                                            On Sale
+                                        </div>
+                                        <div
+                                            class="absolute  bg-white text-gray-900 w-11/12 bottom-4 left-1/2 -translate-x-1/2  uppercase tracking-wider py-4 
+                                px-8 text-[13px] font-semibold cursor-pointer hover:bg-opacity-90 hidden group-hover:block group-hover:animate-fadeIn text-center ">
+                                            Explore Mug
+                                        </div>
+
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="text-center mt-8">
+                                <a href="#" alt="product-pvduc" class="text-xl mb-3 hover:text-[#A25F4B]">Black Tea
+                                    Cup</a>
+                                <div class="product_price">
+                                    <span class="text-xl text-[#A25F4B]">$15.00</span>
+                                    <span class="ml-2 text-gray-400 line-through">$29.00 USD</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- product 3 -->
+                        <div class="tqd-product-card">
+                            <div class="h-[380px]  bg-[url('../img/winter_img.jpg')] bg-cover bg-no-repeat bg-center">
+                                <a href="#" alt="phamduc">
+                                    <div class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all 
+                                hover:ease-in-out hover:duration-600 relative group">
+                                        <!-- <div
+                                    class="absolute w-[100px] bg-white py-2 px-4 top-3 right-3 text-center font-semibold text-[#A25F4B]">
+                                    On Sale
+                                </div> -->
+                                        <div
+                                            class="absolute  bg-white text-gray-900 w-11/12 bottom-4 left-1/2 -translate-x-1/2  uppercase tracking-wider py-4 
+                                px-8 text-[13px] font-semibold cursor-pointer hover:bg-opacity-90 hidden group-hover:block group-hover:animate-fadeIn text-center ">
+                                            Explore Mug
+                                        </div>
+
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="text-center mt-8">
+                                <a href="#" alt="product-pvduc" class="text-xl mb-3 hover:text-[#A25F4B]">Winter Style
+                                    Mug</a>
+                                <div class="product_price">
+                                    <span class="text-xl text-[#A25F4B]">$21.00 </span>
+                                    <!-- <span class="ml-2 text-gray-400 line-through">$69.00 USD</span> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+
+
+
+
+
+
+        <!-- start subscribe-us -->
+        <div class="subscribe-us h-[350px] bg-[#1d1f2e] mb-24 flex flex-col justify-center items-center">
+            <div class=" flex justify-center items-center mb-6 px-6 xs:px-0">
+                <div class="w-8 h-px bg-gray-700"></div>
+                <div class=" mx-4 tracking-widest text-gray-400 font-bold text-xs text-center">
+                    SIGN UP AND GET FREE COFFEE BAGS
+                </div>
+                <div class=" w-8 h-px bg-gray-700"></div>
+            </div>
+            <div class="text-4xl text-white text-center mb-6">Coffee Updates</div>
+            <div class="tqd-form">
+                <form action="" class="flex flex-col md:flex-row justify-center items-center gap-3">
+                    <div class="tqd-form-item text-center">
+                        <input type="email" placeholder="team3@gmail.com" required
+                            class="px-6 py-4 w-[350px] max-w-[80%] xs:max-w-full bg-inherit border-[1px] border-gray-700 outline-none text-white leading-5
+                         hover:boder-gray-300 duration-500 focus:boder-gray-300 placeholder:uppercase placeholder:text-xs placeholder:tracking-widest placeholder:font-semibold">
+                    </div>
+                    <div class="tqd-form-item">
+                        <button type="submit "
+                            class="tqd-button bg-white text-gray-900 w-max max-h-[54px]">Subscribe</button>
+                    </div>
+                </form>
+            </div>
+        </div> <!--subscribe-us-->
+
+
+        </main><!--end main-->
+
+        <footer class=" w-[95%] xl:w-[65%] mx-auto mb-24 text-gray-500 text-sm ">
+            <div class="flex flex-col md:flex-row text-center md:text-left gap-12 md:gap-8">
+                <div class="basis-1/3 ">
+                    <div class="font-bold text-xl mb-4 text-gray-800">SpecialCoffee</div>
+                    <div class="mb-8 md:mb-20 mt-5">Delivering the best coffee life since 2022.
+                        <span class="block"> From coffee geeks to the real ones.</span>
+                    </div>
+                    <div class="text-gray-400 hover:text-[#A25F4B]">THE COFFESTYLE. © 2022</div>
+                </div>
+                <div class="basis-1/6 ">
+                    <div class="flex flex-col gap-3">
+                        <div class="uppercase font-semibold tracking-wider text-gray-600 mb-4">Menu</div>
+                        <div class=""><a href="#" class="hover:text-[#A25F4B]">Home</a></div>
+                        <div class=""><a href="#" class="hover:text-[#A25F4B]">Our Products</a></div>
+                        <div class=""><a href="#" class="hover:text-[#A25F4B]">About</a></div>
+                        <div class=""><a href="#" class="hover:text-[#A25F4B]">Contact</a></div>
+                        <div class=""><a href="#" class="hover:text-[#A25F4B]">Styleguide</a></div>
+                    </div>
+                </div>
+
+                <div class="basis-1/6 ">
+                    <div class="flex flex-col gap-3">
+                        <div class="uppercase font-semibold tracking-wider text-gray-600 mb-4">Follow us</div>
+                        <div class=""><a href="#" class="hover:text-[#A25F4B]">Facebook</a></div>
+                        <div class=""><a href="#" class="hover:text-[#A25F4B]">Instagram</a></div>
+                        <div class=""> <a href="#" class="hover:text-[#A25F4B]">Pinteres</a></div>
+                        <div class=""><a href="#" class="hover:text-[#A25F4B]">Twitter</a></div>
+                    </div>
+                </div>
+
+                <div class="basis-1/3 ">
+                    <div class="uppercase font-semibold tracking-wider text-gray-600 mb-8 mb:mb-4">Contact Us</div>
+                    <div class="mb-4"><a href="#" class="hover:text-[#A25F4B]">We are Always Happy to Help</a></div>
+                    <div class="mb-16 text-gray-800 text-[22px] font-normal tracking-wide"> <a href="#"
+                            class="hover:text-[#A25F4B]">team3@gmail.com</a>
+                    </div>
+                    <div class=""><a href="#" class=" text-gray-400 hover:text-[#A25F4B]">Power by TEAM 3 </a></div>
+                </div>
+            </div>
+        </footer><!--end footer-->
+    </div><!--end content_wraper-->
+    </div><!--end root-->
+</body>
+
+</html>
